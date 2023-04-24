@@ -1,0 +1,387 @@
+/* Thèmes du site des Thés 
+
+version 1.0.0
+Author : Sandrine Faucher
+
+*/
+
+
+/* Font family and font size
+=====================
+
+h1 = 
+
+h2 =
+
+
+colors 
+======================
+
+
+
+
+======================*/
+
+/* GLOBAL */
+
+html {
+
+    background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "lato", "arial", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-weight: 300px;
+    word-spacing: 8px;
+
+}
+
+h1 {
+    color: white;
+    ;
+
+}
+
+h2 {
+    color: black;
+    font-size: 250%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 160%;
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: forestgreen;
+    width: 100px;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+
+
+}
+
+p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 24px;
+
+}
+
+section {
+    padding: 30px 0 60px 0;
+}
+
+/* HEADER */
+
+header {
+
+    background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+            rgba(7, 117, 230, 0.6)),
+        url(../ressources/drive-download-20230421T074657Z-001/header.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.home-title {
+    position: absolute;
+    top: 30%;
+    color: white;
+}
+
+.home-title h1 {
+    font-size: 340%;
+    color: white;
+
+}
+
+span {
+    font-weight: 700;
+}
+
+/* buttons */
+
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 1s, color 1s, border;
+    margin-bottom: 20px;
+
+}
+
+.btn-full {
+    background-color: azure;
+    color: forestgreen;
+    margin-right: 20px;
+}
+
+.btn-ghost {
+    border: 1px solid white;
+    color: white
+}
+
+.btn-full:hover {
+    background-color: forestgreen;
+    color: white;
+
+}
+
+.btn-ghost:hover {
+    background-color: forestgreen;
+    border: 1px solid forestgreen;
+    color: white;
+}
+
+/* NOS PRODUITS */
+
+.produit-img {
+    width: 100%;
+    height: auto;
+}
+
+.produits-icon {
+    font-size: 30px;
+    color: forestgreen;
+    translate: all 1s;
+
+}
+
+.produit-plus {
+
+    margin: 20px 0;
+}
+
+.produit-plus:hover .produits-icon {
+    color: grey;
+    transform: translateX(20px);
+}
+
+
+/* NOS PRODUITS */
+
+.famille-the {
+    background-color: aquamarine;
+
+}
+
+.famille-details {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10Px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+
+.famille-details img {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.famille-details h4 {
+    text-align: center;
+}
+
+/* GALERIE IMAGES */
+
+.galerie-images {
+    display: block;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 30px;
+}
+
+.galerie-titre {
+    position: relative;
+    top: 260px;
+    left: 20px;
+}
+
+.galerie-titre h4 {
+    color: white;
+}
+
+/* CLIENTS */
+
+.clients {
+
+    background-image: linear-gradient(rgba(0, 242, 96, 0.4),
+            rgba(7, 117, 230, 0.6)), url(../ressources/drive-download-20230421T074657Z-001/the-paysage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients h2 {
+    color: white;
+}
+.clients h2::after{
+    background-color: white;
+
+}
+
+blockquote {
+    color: white;
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+}
+
+blockquote:before {
+    content:"\201C";
+    font-size: 800%;
+    font-family: "sanchez", serif;
+    position: relative;
+    top:70px;
+    right:15px;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+cite img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+/*TABLEAU DES PACKS */
+.pack{
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.pack h3{
+
+    color: forestgreen;
+    font-weight: 400;
+}
+.pack h4{
+    font-size: 200%;
+    font-weight: 100;
+}
+.pack-title{
+    padding: 10px 10px 0 10px;
+    border-bottom: 1px solid grey;
+}
+.pack-title span{
+    font-weight: 100;
+    font-size: 40%;
+    position: relative;
+    top: -15px;
+    left: 2px;
+}
+.pack-premium{
+    background-color: rgb(180, 204, 140);
+    color: white;
+}
+/*BUG POSITION ABSOLUTE*/
+.pack-title-premium{
+    font-size: 10px;
+    font-weight: 200;
+    text-align: center;
+    
+    background-color: azure;
+    color: forestgreen;
+    border-radius: 10px;
+    padding: 3px;
+    width: 40%;
+
+}
+.pack-content ul{
+    list-style:none;
+    padding: 20px;
+    font-weight: 300;
+    line-height: 35px;
+}
+.pack-content ul li i{
+    font-size: 90%;
+    margin-right: 10px;
+
+}
+.fa-solid fa-circle-check{
+    color: forestgreen;
+}
+.pack-signup{
+    text-align: center;
+    list-style: none;
+}
+.pack-signup:hover .btn-pack{
+    background-color: rgb(102, 219, 102);
+    color: white;
+
+}
+.btn-pack{
+    background-color: forestgreen;
+    color:white;
+    margin-bottom: 20px;    
+}
+
+/*CONTACT */
+
+.contact-form{
+    margin-bottom: 30px;
+}
+.contact-message{
+    width: 100%;
+}
+.btn-contact{
+    background-color: forestgreen;
+    color: white;
+    margin-right: 20px;
+}
+
+.map{
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+}
+.map iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+/*FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    height: 60px;
+    text-align: center;
+    padding: 20px 20px;
+}
+.copyright{
+    text-align: center;
+}
+
+.copyright a{
+    color: white;                    
+}                                                    
+
+                                                                                                                        
+
